@@ -12,7 +12,8 @@
     "format:fix": "bunx prettier src/**/*.{ts,tsx} --write",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "commitlint": "commitlint --edit"
   },
   "lint-staged": {
     "src/**/*{.js,.jsx,.ts,.tsx}": [
@@ -29,6 +30,8 @@
     "redux-saga": "^1.2.3"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "@commitlint/config-conventional": "^17.7.0",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",
